@@ -2,12 +2,12 @@
 
 public class Inventory
 {
-    private List<Item> _items = new List<Item>();
+    private List<Item> _items;
 
     private int _maxWeight;
     private int _weight;
 
-    public int MaxWeight => _maxWeight;
+    public int MaxWeight => maxWeight;
 
     public int Weight => _weight;
 
@@ -16,7 +16,7 @@ public class Inventory
         _maxWeight = maxWeight;
     }
     
-    public bool AddItem(Item item, int count)
+    public bool AddItem(Item item int count)
     {
         if (_weight + item.Weight * count > _maxWeight)
         {
@@ -47,7 +47,7 @@ public class Inventory
             c++;
         }
 
-        return c;
+        return c
     }
     
     
